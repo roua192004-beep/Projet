@@ -6,10 +6,14 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     git \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Installer les extensions PHP nécessaires (PDO MySQL et Zip pour PhpSpreadsheet)
-RUN docker-php-ext-install pdo pdo_mysql zip
+# Installer les extensions PHP nécessaires (GD, PDO MySQL et Zip pour PhpSpreadsheet)
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd pdo pdo_mysql zip
 
 # Activer le module Apache rewrite
 RUN a2enmod rewrite
