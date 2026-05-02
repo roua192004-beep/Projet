@@ -1,0 +1,7 @@
+{
+    "name": "sagemcom/robot-inventaire",
+    "description": "Logistics Dashboard",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

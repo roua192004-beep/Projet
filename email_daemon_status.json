@@ -1,0 +1,19 @@
+{
+    "running": true,
+    "pid": 4436,
+    "started_at": "2026-05-03 00:45:12",
+    "check_every": 30,
+    "last_check": "2026-05-03 00:45:11",
+    "last_result": {
+        "checked_at": "2026-05-03 00:45:11",
+        "found": 0,
+        "imported": 0,
+        "errors": 0,
+        "details": [
+            "Aucun email non lu"
+        ]
+    },
+    "total_imported": 0,
+    "check_count": 40,
+    "updated_at": "2026-05-03 00:45:12"
+}
